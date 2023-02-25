@@ -279,3 +279,35 @@ color: #ff606e;
 .valid-feedback{
 color: #2acc80;
 }
+
+/*css Maca*/
+.carruselDimensiones img{
+  width: 80%;
+}
+.fondoBanner div{
+background-image:url(../img/category/blog-categorias01.jpg);
+}
+
+
+.contenedor h1{
+
+ animation: movimiento 7s;
+}
+
+@keyframes movimiento {
+
+35% { margin-left: 100px;
+    }
+}
+
+.contenedor p{
+
+animation: movimientos 7s;
+}
+
+@keyframes movimientos {
+
+35% { margin-right: 100px;
+   }
+}
+
