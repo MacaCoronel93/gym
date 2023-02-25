@@ -1,9 +1,5 @@
-* {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto Mono", monospace;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@300&family=Roboto+Mono&display=swap');
+
 
 body {
   background-color: #273b63;
