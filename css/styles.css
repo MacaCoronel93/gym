@@ -323,3 +323,32 @@ animation: movimientos 7s;
    }
 }
 
+/*css Contactos*/
+.map-container {
+  position: relative;
+  padding: 11.7em ;
+  margin-left: 2em;
+  margin-bottom: 20em;
+  height: 20em;
+  
+}
+.enc {
+  margin-top: 0.5em;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  margin-top: 3.5em;
+  border-radius: 10px; /* Cambia el valor para ajustar el radio de los bordes */
+  overflow: hiddens;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+}
+
+
