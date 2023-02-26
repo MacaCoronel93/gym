@@ -45,12 +45,12 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item mx-3">
-                <a class="nav-link active" aria-current="page" href="./nosotros.html"
+                <a class="nav-link"  href="./nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="#">CONTACTO</a>
+                <a class="nav-link active"  aria-current="page" href="./Contactos.html">CONTACTO</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="./suscribe.html">SUSCRIBIRSE</a>
@@ -61,7 +61,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle mx-3"
-                  href="#"
+                  href="./categoria.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -70,15 +70,15 @@
                 </a>
                 
           <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Deportes</a></li>
+                  <li><a class="dropdown-item" href="./categoriaDeportes.html">Deportes</a></li>
                   <li>
                     <a class="dropdown-item" href="./categoria.html">Entrenamientos</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Dieta</a>
+                    <a class="dropdown-item" href="./categoriaDieta.html">Dieta</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Estilo de vida</a>
+                    <a class="dropdown-item" href="./categoriaEstilo.html">Estilo de vida</a>
                   </li>
                 </ul>
               </li>
@@ -104,22 +104,22 @@
 
         <div class="col h-100">
           <h1>CONTACTATE CON ROLLINGFIT!</h1>
-          <form>
+          <form class="needs-validation">
             <div class="col">
               <label for="nombre" class="form-label text-start">NOMBRE</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" required>
+              <input type="text" class="form-control" id="nombre" name="nombre" maxlength="15" required>
             </div>
             <div class="mb-3 col">
               <label for="apellido" class="form-label ">APELLIDO</label>
-              <input type="text" class="form-control" id="apellido" name="apellido" required>
+              <input type="text" class="form-control" id="apellido" name="apellido" maxlength="15" required>
             </div>
             <div class="mb-3 col">
               <label for="email" class="form-label">EMAIL</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="email" name="email" maxlength="25" required>
             </div>
             <div class="mb-3 col">
               <label for="mensaje" class="form-label">DEJANOS UN MENSAJE!</label>
-              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+              <textarea class="form-control h-50" id="mensaje" name="mensaje" rows="5" maxlength="250" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">ENVIAR</button>
           </form>
