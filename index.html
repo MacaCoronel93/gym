@@ -8,7 +8,7 @@
       rel="shortcut icon"
       href="./assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
     />
-    <title>RollingFit </title>
+    <title>RollingFit</title>
     <!-- Link Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Link Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,11 +29,12 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img
+      <nav class="navbar navbar-expand-lg navbarColor">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
               width="80px"
-              src="./assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
+              src="../assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
               alt="logo de rolling"
           /></a>
           <button
@@ -53,7 +54,10 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="./pages/nosotros.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/nosotros.html"
                   >NOSOTROS</a
                 >
               </li>
@@ -61,15 +65,20 @@
                 <a class="nav-link" href="#">CONTACTO</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./pages/suscribe.html">SUSCRIBIRSE</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/suscribe.html"
+                  >SUSCRIBIRSE</a
+                >
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./pages/login.html">LOGIN</a>
+                <a class="nav-link" href="pages/login.html">LOGIN</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle mx-3"
-                  href="./pages/categoria.html"
+                  href="./categoria.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -79,7 +88,9 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Deportes</a></li>
                   <li>
-                    <a class="dropdown-item" href="./pages/categoria.html">Entrenamientos</a>
+                    <a class="dropdown-item" href="pages/categoria.html"
+                      >Entrenamientos</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Dieta</a>
@@ -89,26 +100,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item mx-3">
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder=""
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Buscar
-                  </button>
-                </form>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid navbarSpace">
         <div>
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -233,16 +231,67 @@
                 >
               </div>
             </div>
+            <div class="m-2 row">
+              <div class="col-4 pr-3 pt-3">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/blog010.jpg"
+                  alt="imagen de entrada de blog"
+                />
+              </div>
+              <div class="col-8 p-0">
+                <h2>TITULO</h2>
+                descripción descripción descripción descripción descripción
+                descripción descripción descripción descripción descripción...<a
+                  href="./pages/entrada.html"
+                  >Ver más >></a
+                >
+              </div>
+            </div>
+            <div class="m-2 row">
+              <div class="col-4 pr-3 pt-3">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/blog010.jpg"
+                  alt="imagen de entrada de blog"
+                />
+              </div>
+              <div class="col-8 p-0">
+                <h2>TITULO</h2>
+                descripción descripción descripción descripción descripción
+                descripción descripción descripción descripción descripción...<a
+                  href="./pages/entrada.html"
+                  >Ver más >></a
+                >
+              </div>
+            </div>
+            <div class="m-2 row">
+              <div class="col-4 pr-3 pt-3">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/blog010.jpg"
+                  alt="imagen de entrada de blog"
+                />
+              </div>
+              <div class="col-8 p-0">
+                <h2>TITULO</h2>
+                descripción descripción descripción descripción descripción
+                descripción descripción descripción descripción descripción...<a
+                  href="./pages/entrada.html"
+                  >Ver más >></a
+                >
+              </div>
+            </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <form class="d-flex p-3" role="search">
+            <form class="d-flex p-3 mx-2 mt-4" role="search">
               <input
                 class="form-control mx-2"
                 type="search"
-                placeholder=""
+                placeholder="Ingresa una palabra clave..."
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-outline-light" type="submit">
                 Buscar
               </button>
             </form>
@@ -256,7 +305,7 @@
                       class="img-fluid imgCategorias"
                     />
                     <p
-                      class="position-absolute top-50 start-50 translate-middle"
+                      class="position-absolute top-50 start-50 translate-middle letterStyle"
                     >
                       Deportes
                     </p></a
@@ -272,7 +321,7 @@
                       class="img-fluid imgCategorias"
                     />
                     <p
-                      class="position-absolute top-50 start-50 translate-middle text-center"
+                      class="position-absolute top-50 start-50 translate-middle text-center letterStyle"
                     >
                       Entrenamientos
                     </p></a
@@ -288,7 +337,7 @@
                       alt=""
                     />
                     <p
-                      class="position-absolute top-50 start-50 translate-middle text-center"
+                      class="position-absolute top-50 start-50 translate-middle text-center letterStyle"
                     >
                       Dieta
                     </p></a
@@ -304,7 +353,7 @@
                       alt=""
                     />
                     <p
-                      class="position-absolute top-50 start-50 translate-middle text-center"
+                      class="position-absolute top-50 start-50 translate-middle text-center letterStyle"
                     >
                       Estilo de Vida
                     </p>
@@ -312,49 +361,42 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-md-block">
-              <a href="http://starnutrition.com.ar/" target="_blank">
+            <div>
+              <div class="d-none d-md-block ">
+                <a href="">
                 <img
-                  src="./assets/img/fitnesmen.jpg"
-                  alt="imagen publicidad"
-                  class="img-fluid col-12 m-0"
-              /></a>
+                  class="img-fluid mt-2"
+                  src="assets/img/publicidad2-img.jpg"
+                  alt="imagen de publicidad"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
+        </div>
       </div>
     </main>
-    <footer class="container">
+    <footer class="container mt-3">
       <div class="row">
         <div class="col-12 col-md-4 py-3">
-          <div><h3 class="text-center">SEGUINOS EN:</h3></div>
+          <div><h4 class="text-center">SEGUINOS EN:</h4></div>
           <div class="d-flex justify-content-around py-3">
-            <img
-              width="60px"
-              src="./assets/img/icons/facebook_icon.png"
-              alt="facebook"
-            /><img
-              width="60px"
-              src="./assets/img/icons/twitter_icon.png"
-              alt="twitter"
-            /><img
-              width="60px"
-              src="./assets/img/icons/YouTube_icon.png"
-              alt="youtube"
-            />
+            <i class="bi bi-facebook h2 text-light"></i>
+            <i class="bi bi-twitter h2 text-light"></i>
+            <i class="bi bi-youtube h2 text-light"></i>
           </div>
         </div>
         <div class="col-12 col-md-4 d-flex justify-content-around p-3">
           <img
-            width="130px"
+            class="footerLogo"
             src="./assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
-            alt=""
+            alt="logo de rolling fit"
           />
         </div>
         <div
           class="col-12 col-md-4 d-flex justify-content-around align-items-center py-3"
         >
-          ©2023 - Todos los derechos reservados
+          <b> ©2023 - Todos los derechos reservados</b>
         </div>
       </div>
     </footer>
