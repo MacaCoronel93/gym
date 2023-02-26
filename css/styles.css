@@ -1,14 +1,38 @@
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@300&family=Roboto+Mono&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@300&family=Roboto+Mono&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* Se importan fuentes e íconos */
 body {
-  
   background-image: linear-gradient(
     43deg,
     #273b63 0%,
     #e3e3e3 46%,
     #0e0e0f 100%
   );
+}
+
+header {
+  width: 100%;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 0 10px #000;
+}
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #282794;
+}
+.navbarColor {
+  background-color: transparent;
+  font-weight: 700;
+  text-shadow: 3px 3px 15px #ebeff8;
+}
+
+.navbarSpace {
+  padding-top: 110px;
 }
 
 /* define el tamaño de las cajas que contienen las fotos de las categorías "Deportes-Entrenamientos-Dieta-Estilo de Vida */
@@ -29,14 +53,34 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 206);
   text-decoration: solid;
 }
-
+/* Estilo del texto de las 4 imágenes de categorías */
+.letterStyle {
+  color: #000;
+  font-weight: 600;
+}
+footer {
+  border-top: 1px solid #00000044;
+}
+.footerLogo {
+  width: 100px;
+  height: 100px;
+  margin-top: px;
+}
+/* Iconos footer */
+.bi {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.bi:hover {
+  scale: 1.2;
+}
 /*suscribirse*/
 
 .container-form {
-  margin: 50px auto ;
+  margin: 50px auto;
   max-width: 600px;
   padding: 20px;
   background-color: #f7f7f7;
@@ -44,27 +88,26 @@ a {
   box-shadow: 0px 0px 10px #ccc;
 }
 
-.container-form a{
+.container-form a {
   color: blue;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 765px){
-  .container-form{
+@media screen and (max-width: 765px) {
+  .container-form {
     max-width: 400px;
   }
 }
 
-@media screen and (max-width: 450px){
-  .container-form{
+@media screen and (max-width: 450px) {
+  .container-form {
     max-width: 300px;
   }
 }
 
-
 /*login*/
 
-.bg{
+.bg {
   background-image: url(/assets/img/login-img.jpg);
   background-position: center center;
   background-size: cover;
@@ -83,7 +126,7 @@ a {
   padding: 1.5%;
   border-radius: 2rem;
   background-color: #e3e3e3;
-  text-align:justify;
+  text-align: justify;
   margin: 1%;
 }
 
@@ -98,9 +141,9 @@ a {
   height: 35%;
   padding: 1.5%;
   margin: 1%;
-  border-radius:2rem;
+  border-radius: 2rem;
   background-color: #e3e3e3;
-  text-align:justify;
+  text-align: justify;
 }
 
 .responsable img {
@@ -114,7 +157,7 @@ a {
   height: 30%;
   padding: 1.5rem;
   margin: 1%;
-  border-radius:1.5rem;
+  border-radius: 1.5rem;
   background-color: #e3e3e3;
   text-align: justify;
 }
@@ -126,28 +169,26 @@ a {
   margin-top: -30%;
 }
 
-
 .equipo {
   width: 90%;
   height: 85%;
   padding: 1.5%;
   margin: 1%;
-  border-radius:1.5rem;
+  border-radius: 1.5rem;
   background-color: #e3e3e3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .equipo img {
-width: 10%;
-height: 10%;
-display: flex;
-justify-content: center;
-padding: 0.5rem;
-transition-property: all;
-transition-duration: 0.5s;
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .equipo img:hover {
@@ -156,7 +197,7 @@ transition-duration: 0.5s;
 
 h6 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .form-holder1 {
@@ -169,168 +210,170 @@ h6 {
 }
 
 .form-holder .form-content {
-position: relative;
-text-align: center;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: center;
-justify-content: center;
--webkit-align-items: center;
-align-items: center;
-padding: 60px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 60px;
 }
 
 .form-content .form-items {
-border: 3px solid #fff;
-padding: 40px;
-display: inline-block;
-width: 100%;
-min-width: 540px;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-text-align: left;
--webkit-transition: all 0.4s ease;
-transition: all 0.4s ease;
+  border: 3px solid #fff;
+  padding: 40px;
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .form-content h3 {
-color: #000000;
-text-align: left;
-font-size: 28px;
-font-weight: 600;
-margin-bottom: 5px;
+  color: #000000;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .form-content h3.form-title {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form-content p {
-color: #000000;
-text-align: left;
-font-size: 17px;
-font-weight: 300;
-line-height: 20px;
-margin-bottom: 30px;
+  color: #000000;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 30px;
 }
 
-
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
-color: #000000;
+.form-content label,
+.was-validated .form-check-input:invalid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #000000;
 }
 
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
-width: 100%;
-padding: 9px 20px;
-text-align: left;
-border: 0;
-outline: 0;
-border-radius: 6px;
-background-color: #fff;
-font-size: 15px;
-font-weight: 300;
-color: #8D8D8D;
--webkit-transition: all 0.3s ease;
-transition: all 0.3s ease;
-margin-top: 16px;
+.form-content input[type="text"],
+.form-content input[type="password"],
+.form-content input[type="email"],
+.form-content select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8d8d8d;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 16px;
 }
 
-
-.btn-primary{
-background-color: #6C757D;
-outline: none;
-border: 0px;
- box-shadow: none;
+.btn-primary {
+  background-color: #6c757d;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-background-color: #495056;
-outline: none !important;
-border: none !important;
- box-shadow: none;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #495056;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
 }
 
 .form-content textarea {
-position: static !important;
-width: 100%;
-padding: 8px 20px;
-border-radius: 6px;
-text-align: left;
-background-color: #fff;
-border: 0;
-font-size: 15px;
-font-weight: 300;
-color: #8D8D8D;
-outline: none;
-resize: none;
-height: 120px;
--webkit-transition: none;
-transition: none;
-margin-bottom: 14px;
+  position: static !important;
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8d8d8d;
+  outline: none;
+  resize: none;
+  height: 120px;
+  -webkit-transition: none;
+  transition: none;
+  margin-bottom: 14px;
 }
 
-.form-content textarea:hover, .form-content textarea:focus {
-border: 0;
-background-color: #ebeff8;
-color: #8D8D8D;
+.form-content textarea:hover,
+.form-content textarea:focus {
+  border: 0;
+  background-color: #ebeff8;
+  color: #8d8d8d;
 }
 
-.mv-up{
-margin-top: -9px !important;
-margin-bottom: 8px !important;
+.mv-up {
+  margin-top: -9px !important;
+  margin-bottom: 8px !important;
 }
 
-.invalid-feedback{
-color: #ff606e;
+.invalid-feedback {
+  color: #ff606e;
 }
 
-.valid-feedback{
-color: #2acc80;
+.valid-feedback {
+  color: #2acc80;
 }
 
 /*css Maca*/
-.carruselDimensiones img{
+.carruselDimensiones img {
   width: 80%;
 }
-.fondoBanner div{
-background-image:url(../assets/img/category/blog-categorias01.jpg);
+.fondoBanner div {
+  background-image: url(../assets/img/category/blog-categorias01.jpg);
 }
 
-
-.contenedor h1{
-
- animation: movimiento 7s;
+.contenedor h1 {
+  animation: movimiento 7s;
 }
 
 @keyframes movimiento {
-
-35% { margin-left: 100px;
-    }
+  35% {
+    margin-left: 100px;
+  }
 }
 
-.contenedor p{
-
-animation: movimientos 7s;
+.contenedor p {
+  animation: movimientos 7s;
 }
 
 @keyframes movimientos {
-
-35% { margin-right: 100px;
-   }
+  35% {
+    margin-right: 100px;
+  }
 }
 
 /*css Contactos*/
 .map-container {
   position: relative;
-  padding: 11.7em ;
+  padding: 11.7em;
   margin-left: 2em;
   margin-bottom: 20em;
   height: 20em;
-  
 }
 .enc {
   margin-top: 0.5em;
@@ -341,7 +384,7 @@ animation: movimientos 7s;
   top: 0;
   left: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   margin-top: 3.5em;
   border-radius: 10px; /* Cambia el valor para ajustar el radio de los bordes */
   overflow: hiddens;
@@ -350,5 +393,3 @@ animation: movimientos 7s;
 .navbar-nav .nav-link {
   color: black;
 }
-
-
