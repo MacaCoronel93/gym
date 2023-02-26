@@ -113,13 +113,104 @@
               <label for="email" class="form-label">Correo electronico</label>
               <input type="email" class="form-control required" name="email" />
             </div>
-            <div class="mb-4">
-              <label for="password" class="form-label">Contraseña</label>
-              <input
-                type="password"
-                class="form-control required"
-                name="password"
-              />
+            <div class="col bg-white p-5 rounded-end">
+              <div class="text-end">
+                <img
+                  src="../assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
+                  width="100"
+                  alt="logo"
+                />
+              </div>
+
+              <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+              <!-- login -->
+
+              <form action="#" class="needs-validation">
+                <div class="mb-4">
+                  <label for="email" class="form-label"
+                    >Correo electronico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control required"
+                    name="email"
+                    maxlength="25"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control required"
+                    name="password"
+                    maxlength="7"
+                    required
+                  />
+                </div>
+
+                <!-- checkbox -->
+
+                <div class="mb-4 form-check">
+                  <input
+                    type="checkbox"
+                    name="connected"
+                    class="form-check-input required"
+                    id=""
+                  />
+                  <label for="connected" class="form-check-label"
+                    >Mantenerme conectado</label
+                  >
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">
+                    Iniciar sesión
+                  </button>
+                </div>
+
+                <div class="my-3">
+                  <span>No tienes cuenta? <a href="#">Registrate</a></span
+                  ><br />
+                  <span><a href="#">Recuperar contraseña</a></span>
+                </div>
+              </form>
+              <!-- login RR.SS -->
+              <div class="container w-100 my-5">
+                <div class="row text-center">
+                  <div class="col-12">Iniciar sesión</div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-outline-primary w-100 my-1">
+                      <div class="row align-items-center">
+                        <div class="col-2 d-none d-md-block">
+                          <img
+                            src="../assets/img/icons/facebook_icon.png"
+                            width="32"
+                            alt="fb-icon"
+                          />
+                        </div>
+                        <div class="col-10 text-center">Facebook</div>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-outline-danger w-100 my-1">
+                      <div class="row align-items-center">
+                        <div class="col-2 d-none d-md-block">
+                          <img
+                            src="../assets/img/icons/png-transparent-google-logo-google-text-trademark-logo.png"
+                            width="32"
+                            alt="Google-icon"
+                          />
+                        </div>
+                        <div class="col-12 col-md-10 text-center">Google</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- checkbox -->

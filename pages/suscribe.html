@@ -93,126 +93,32 @@
       </nav>
     </header>
 
-    <div class="form-body1">
-      <div class="row">
-        <div class="form-holder1">
-          <div class="form-content">
-            <div class="form-items">
-              <h3>Suscribase ahora</h3>
-              <p>¡No te pierdas las últimas noticias del mundo del fitness!.</p>
-              <form class="required-validation" novalidate>
-                <div class="col-md-12">
-                  <input
-                    class="form-control required"
-                    type="text"
-                    name="name"
-                    placeholder="Nombre completo"
-                    required
-                  />
-                  <div class="valid-feedback">Username field is valid!</div>
-                  <div class="invalid-feedback">
-                    Username field cannot be blank!
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <input
-                    class="form-control required"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                  <div class="valid-feedback">Email field is valid!</div>
-                  <div class="invalid-feedback">
-                    Email field cannot be blank!
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <input
-                    class="form-control required"
-                    type="password"
-                    name="password"
-                    placeholder="Contraseña"
-                    required
-                  />
-                  <div class="valid-feedback">Password field is valid!</div>
-                  <div class="invalid-feedback">
-                    Password field cannot be blank!
-                  </div>
-                </div>
-
-                <div class="col-md-12 mt-3">
-                  <label class="mb-3 mr-1" for="gender">Genero: </label>
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="gender"
-                    id="male"
-                    autocomplete="off"
-                    required
-                  />
-                  <label class="btn btn-sm btn-outline-secondary" for="male"
-                    >Masculino</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="gender"
-                    id="female"
-                    autocomplete="off"
-                    required
-                  />
-                  <label class="btn btn-sm btn-outline-secondary" for="female"
-                    >Femenino</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="gender"
-                    id="secret"
-                    autocomplete="off"
-                    required
-                  />
-                  <label class="btn btn-sm btn-outline-secondary" for="secret"
-                    >Prefiero no decirlo</label
-                  >
-                  <div class="valid-feedback mv-up">You selected a gender!</div>
-                  <div class="invalid-feedback mv-up">
-                    Please select a gender!
-                  </div>
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="invalidCheck"
-                    required
-                  />
-                  <label class="form-check-label"
-                    >Acepto los <a href="">terminos y condiciones!</a></label
-                  >
-                  <div class="invalid-feedback">
-                    Please confirm that the entered data are all correct!
-                  </div>
-                </div>
-
-                <div class="form-button mt-3">
-                  <button id="submit" type="submit" class="btn btn-primary">
-                    Register
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+    <div class="container-form">
+      <h3>Suscríbase ahora</h3>
+      <p>No te pierdas las últimas noticias del mundo del fitness.</p>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
-      </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" class="form-control" id="apellido" name="apellido" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input type="password" class="form-control" id="password" name="password" required >
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+          <label class="form-check-label" for="terminos">Acepto los <a href="">términos y condiciones.</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
 
     <footer class="container">

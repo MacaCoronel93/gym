@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Incluimos los archivos CSS de Bootstrap -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<!-- Link CSS -->
+<link rel="stylesheet" href="../css/styles.css" />
+<!-- Link Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital@0;1&family=Roboto+Mono:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
+
+<title>Contactos</title>
+
+
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-black bg-white">
+    <div class="container"> 
+      <a class="navbar-brand" href="../index.html"
+            ><img
+              width="80px"
+              src="../assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
+              alt="logo de rolling"
+          /></a>
+     <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <div
+            class="collapse navbar-collapse lg-d-flex justify-content-around"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a class="nav-link"  href="./nosotros.html"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active"  aria-current="page" href="./Contactos.html">CONTACTO</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./suscribe.html">SUSCRIBIRSE</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./login.html">LOGIN</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CATEGORÍAS
+                </a>
+                
+          <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./categoriaDeportes.html">Deportes</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./categoria.html">Entrenamientos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./categoriaDieta.html">Dieta</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./categoriaEstilo.html">Estilo de vida</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder=""
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success btn-outline-dark" type="submit">
+                    Buscar
+                  </button>
+    
+                </form>
+              </li>
+            </ul>
+         </div>   
+              </nav>
+</header>  
+  <!-- Contenido principal -->
+  <main class="container py-5">
+
+    <div class="container text-start">
+      <div class="row align-items-start">
+
+        <div class="col h-100">
+          <h1>CONTACTATE CON ROLLINGFIT!</h1>
+          <form class="needs-validation">
+            <div class="col">
+              <label for="nombre" class="form-label text-start">NOMBRE</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" maxlength="15" required>
+            </div>
+            <div class="mb-3 col">
+              <label for="apellido" class="form-label ">APELLIDO</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" maxlength="15" required>
+            </div>
+            <div class="mb-3 col">
+              <label for="email" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="email" name="email" maxlength="25" required>
+            </div>
+            <div class="mb-3 col">
+              <label for="mensaje" class="form-label">DEJANOS UN MENSAJE!</label>
+              <textarea class="form-control h-50" id="mensaje" name="mensaje" rows="5" maxlength="250" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+          </form>
+        </div>
+    
+        <div class="col h-100 align-content-end text-center">
+          <h1 class="enc">ENCUENTRANOS EN:</h1>
+    
+          <div class="map-container text-end">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1023707775184!2d-65.20939048529601!3d-26.83669609650096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1677371497043!5m2!1ses!2sar" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>  
+      
+      
+</body>
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 py-3">
+        <div><h3 class="text-center">SEGUINOS EN:</h3></div>
+        <div class="d-flex justify-content-around py-3">
+          <img
+            width="70px"
+            src="../assets/img/icons/facebook_icon.png"
+            alt="facebook"
+          /><img
+            width="70px"
+            src="../assets/img/icons/twitter_icon.png"
+            alt="twitter"
+          /><img
+            width="70px"
+            src="../assets/img/icons/YouTube_icon.png"
+            alt="youtube"
+          />
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 d-flex justify-content-around p-3">
+        <img
+          width="130px"
+          src="../assets/img/logo/Logotipo para peluquero profesional belleza estética cuidados del cabello con nombre y siglas minimalista elegante.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-sm-12 col-md-4 d-flex justify-content-around align-items-center py-3"
+      >
+        ©2023 - Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- Incluimos los archivos JS de Bootstrap al final del documento para mejorar la carga -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>      
+
+  </html>
