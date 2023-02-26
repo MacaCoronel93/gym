@@ -343,8 +343,8 @@ h6 {
 .carruselDimensiones img {
   width: 80%;
 }
-.fondoBanner div {
-  background-image: url(../assets/img/category/blog-categorias01.jpg);
+.fondoBanner div h1 {
+      animation: movimiento 7s;
 }
 
 .contenedor h1 {
@@ -355,6 +355,10 @@ h6 {
   35% {
     margin-left: 100px;
   }
+}
+
+.fondoBanner div p {
+  animation: movimientos 7s;
 }
 
 .contenedor p {
