@@ -377,7 +377,19 @@ h6 {
   
 
 }
+
+.card:hover{
+  scale: 1.05;
+}
+
+@media (max-width: 767px) {
+  .card:hover {
+    scale: 1;
+  }
+}
 .card-text{ color:#ccc}
+
+
 
 /*css Contactos*/
 .map-container {
