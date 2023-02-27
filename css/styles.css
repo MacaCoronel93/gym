@@ -121,7 +121,7 @@ footer {
 }
 
 .quienes {
-  width: 75%;
+  width: 81%;
   height: 55%;
   padding: 1.5%;
   border-radius: 2rem;
@@ -137,7 +137,7 @@ footer {
 }
 
 .responsable {
-  width: 55%;
+  width: 81%;
   height: 35%;
   padding: 1.5%;
   margin: 1%;
@@ -153,7 +153,7 @@ footer {
 }
 
 .porque {
-  width: 55%;
+  width: 81%;
   height: 30%;
   padding: 1.5rem;
   margin: 1%;
@@ -170,20 +170,18 @@ footer {
 }
 
 .equipo {
-  width: 90%;
-  height: 85%;
+  width: 75%;
+  height: 70%;
   padding: 1.5%;
   margin: 1%;
   border-radius: 1.5rem;
   background-color: #e3e3e3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 .equipo img {
-  width: 10%;
-  height: 10%;
+  width: 25%;
+  height: 25%;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -196,8 +194,9 @@ footer {
 }
 
 h6 {
-  display: flex;
+  display: block;
   justify-content: center;
+  margin: 3%;
 }
 
 .form-holder1 {
@@ -416,4 +415,28 @@ h6 {
 
 .navbar-nav .nav-link {
   color: black;
+}
+
+.contenedor404 h1{
+  font-size: 5rem;
+  margin-top: 1%;
+  margin-left: 1%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.contenedor404 p {
+  font-size: 1.5rem;
+  margin-top: 1%;
+  margin-left: 1%;  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.btn-primary {
+  margin-top: 2%;
+  margin-left: 1%;
+  background-color:#ccc;
+  color: #000;
 }
