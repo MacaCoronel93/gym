@@ -109,7 +109,7 @@
             <li>Acceso a todo nuestro contenido</li>
             <li>VALOR MENSUAL $450</li>
           </ul>
-          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#suscribirseModal">
             quiero!
           </button>
           
@@ -127,7 +127,7 @@
               <li>Acceso a todo nuestro contenido</li>
               <li>VALOR MENSUAL $850</li>
             </ul>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#suscribirseModal">
               quiero!
             </button>
 
@@ -147,18 +147,21 @@
 
                 <li>VALOR MENSUAL $2500</li>
               </ul>
-              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#suscribirseModal">
                 quiero!
               </button>
             </div>
       </article>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="suscribirseModal" tabindex="-1" aria-labelledby="suscribirseModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    
+      
       <div class="container-form">
-
-        <h3>Suscríbase ahora</h3>
-        <p>No te pierdas las últimas noticias del mundo del fitness.</p>
+        <div class="modal-header row">
+        <h3  class="modal-title col-12" id="suscribirseModalLabel">Suscríbase ahora</h3>
+        <p class="col-12">No te pierdas las últimas noticias del mundo del fitness.</p>
+        </div> 
+      <div class="modal-body">   
         <form>
           <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -180,10 +183,12 @@
             <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
             <label class="form-check-label" for="terminos">Acepto los <a href="">términos y condiciones.</a></label>
           </div>
-          <button type="submit" class="btn btn-">Enviar</button>
+          <button type="submit" class="btn btn-secondary">Enviar</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </form>
-      </div> 
+      </div>  
+      </div>
+
     </div> 
   </div>
 </div>     
