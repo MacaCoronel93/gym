@@ -10,6 +10,7 @@ body {
   );
 }
 
+/* Diseño de navbar */
 header {
   width: 100%;
   font-weight: 700;
@@ -18,8 +19,8 @@ header {
   z-index: 2;
   box-shadow: 0 0 10px #000;
 }
-.nav-link {
-  color: #fff;
+.navbar-nav .nav-link {
+  color: white;
 }
 
 .nav-link:hover {
@@ -33,6 +34,37 @@ header {
 
 .navbarSpace {
   padding-top: 110px;
+}
+
+.dropdown-item {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 15px #ebeff8;
+  border-radius: 0px;
+  padding: 6px 16px;
+  transition-property: all;
+  transition-duration: 0s;
+}
+.dropdown-item:hover {
+  background: rgba(58, 58, 58, 0.445);
+  color: #0400e9;
+}
+
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0px;
+  transition-property: all;
+  transition-duration: 0s;
+}
+/* Diseño de imagenes de prevista de entradas */
+.imgPrevista {
+  border-radius: 5px;
+  margin-top: 0px;
+}
+.boxBorder {
+  border-style: ridge;
+  border-color: rgba(255, 255, 255, 0.158);
+  border-radius: 10px;
 }
 
 /* define el tamaño de las cajas que contienen las fotos de las categorías "Deportes-Entrenamientos-Dieta-Estilo de Vida */
@@ -69,6 +101,16 @@ footer {
   height: 100px;
   margin-top: px;
 }
+/* imagen de publicidad */
+.imgPublicidad {
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0s;
+}
+.imgPublicidad:hover {
+  opacity: 0.9;
+}
+
 /* Iconos footer */
 .bi {
   transition-property: all;
@@ -344,7 +386,7 @@ h6 {
   width: 80%;
 }
 .fondoBanner div h1 {
-      animation: movimiento 7s;
+  animation: movimiento 7s;
 }
 
 .contenedor h1 {
@@ -371,14 +413,22 @@ h6 {
   }
 }
 
-.card{
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
-  
-
+.card {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }
 
-.card:hover{
+.card:hover {
   scale: 1.05;
 }
 
@@ -387,9 +437,9 @@ h6 {
     scale: 1;
   }
 }
-.card-text{ color:#ccc}
-
-
+.card-text {
+  color: #ccc;
+}
 
 /*css Contactos*/
 .map-container {
@@ -412,8 +462,4 @@ h6 {
   margin-top: 3.5em;
   border-radius: 10px; /* Cambia el valor para ajustar el radio de los bordes */
   overflow: hiddens;
-}
-
-.navbar-nav .nav-link {
-  color: black;
 }
