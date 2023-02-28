@@ -417,26 +417,34 @@ h6 {
   color: black;
 }
 
+.contenedor404 {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  border: #000 solid;
+}
+
 .contenedor404 h1{
   font-size: 5rem;
-  margin-top: 1%;
-  margin-left: 1%;
-  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 1%;
+  border: 0.1rem solid black;
 }
 
 .contenedor404 p {
   font-size: 1.5rem;
-  margin-top: 1%;
-  margin-left: 1%;  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-align: center;
+  margin-top: 1%;
 }
 
 .btn-primary {
-  margin-top: 2%;
-  margin-left: 1%;
   background-color:#ccc;
   color: #000;
+  position:absolute;
+  left: 44%;
+  margin-top: 1%;
 }
