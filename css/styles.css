@@ -463,10 +463,6 @@ h6 {
   border-radius: 10px;
 } /* Cambia el valor para ajustar el radio de los bordes */
 
-.navbar-nav .nav-link {
-  color: black;
-}
-
 .contenedor404 h1 {
   font-size: 5rem;
   margin-top: 1%;
