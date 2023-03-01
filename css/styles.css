@@ -84,11 +84,20 @@ footer {
 
   */
 
-.modal-content{
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
+.modal-content {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
   box-shadow: 0px 0px 10px #ccc;
-  
 }
 
 /*login*/
@@ -107,9 +116,6 @@ footer {
 }
 
 .quienes {
-  width: 81%;
-  height: 55%;
-  padding: 1.5%;
   border-radius: 2rem;
   background-color: #e3e3e3;
   text-align: justify;
@@ -329,7 +335,7 @@ h6 {
   width: 80%;
 }
 .fondoBanner div h1 {
-      animation: movimiento 7s;
+  animation: movimiento 7s;
 }
 
 .contenedor h1 {
@@ -356,14 +362,22 @@ h6 {
   }
 }
 
-.card{
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
-  
-
+.card {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }
 
-.card:hover{
+.card:hover {
   scale: 1.05;
 }
 
@@ -372,9 +386,9 @@ h6 {
     scale: 1;
   }
 }
-.card-text{ color:#ccc}
-
-
+.card-text {
+  color: #ccc;
+}
 
 /*css Contactos*/
 /*.map-container {
@@ -398,15 +412,6 @@ h6 {
   overflow: hiddens;
   border-radius: 10px;} /* Cambia el valor para ajustar el radio de los bordes */
 
-
-
-<<<<<<< HEAD
-.navbar-nav .nav-link {
-  color: black;
-}
-
-.contenedor404 h1{
-=======
 .contenedor404 {
   background-color: whitesmoke;
   min-height: 100vh;
@@ -414,7 +419,6 @@ h6 {
 }
 
 .contenedor404 h1 {
->>>>>>> f90b70599c4fc88189bf9f5a8bc3586544199a2d
   font-size: 5rem;
   margin-top: 1%;
   margin-left: 1%;
@@ -426,23 +430,16 @@ h6 {
 .contenedor404 p {
   font-size: 1.5rem;
   margin-top: 1%;
-  margin-left: 1%;  padding: 0;
+  margin-left: 1%;
+  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
 .btn-primary {
-<<<<<<< HEAD
-  margin-top: 2%;
-  margin-left: 1%;
-  background-color:#ccc;
-  color: #000;
-}
-=======
   background-color: #ccc;
   color: #000;
   position: absolute;
   left: 44%;
   margin-top: 1%;
 }
->>>>>>> f90b70599c4fc88189bf9f5a8bc3586544199a2d
