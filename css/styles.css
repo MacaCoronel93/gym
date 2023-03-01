@@ -434,3 +434,19 @@ iframe {
   left: 44%;
   margin-top: 1%;
 }
+
+
+/* querys forgot password */
+@media (max-width: 900px){
+  .modal-content{
+max-width: 400px;
+margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px){
+  .modal-content{
+max-width: 300px;
+margin: 0 auto;
+  }
+}
