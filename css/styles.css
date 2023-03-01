@@ -463,17 +463,13 @@ h6 {
   border-radius: 10px;
 } /* Cambia el valor para ajustar el radio de los bordes */
 
-.navbar-nav .nav-link {
-  color: black;
-}
-
 .contenedor404 {
   background-color: whitesmoke;
   min-height: 100vh;
   border: #000 solid;
 }
 
-.contenedor404 h1{
+.contenedor404 h1 {
   font-size: 5rem;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -492,9 +488,9 @@ h6 {
 }
 
 .btn-primary {
-  background-color:#ccc;
+  background-color: #ccc;
   color: #000;
-  position:absolute;
+  position: absolute;
   left: 44%;
   margin-top: 1%;
 }
