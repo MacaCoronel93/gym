@@ -56,6 +56,17 @@ header {
   padding-top: 110px;
 }
 
+/* Diseño de imagenes de previsualizacion de entradas */
+
+.imgPrevista {
+  border-radius: 0.4rem;
+}
+
+.boxBorder {
+  background-color: #001d5a1a;
+  border: 2px ridge rgba(255, 255, 255, 0.219);
+  border-radius: 0.4rem;
+}
 /* define el tamaño de las cajas que contienen las fotos de las categorías "Deportes-Entrenamientos-Dieta-Estilo de Vida */
 .categoriasBox {
   max-width: 170px;
@@ -69,8 +80,22 @@ header {
   transition-duration: 0.5s;
 }
 
+.letterStyle {
+  color: #000;
+  font-weight: 600;
+}
+
 .imgCategorias:hover {
   scale: 1.2;
+}
+
+.imgPublicidad {
+  border-radius: 5px;
+  transition-duration: 0s;
+}
+
+.imgPublicidad:hover {
+  opacity: 0.9;
 }
 
 a {
@@ -78,17 +103,12 @@ a {
   text-decoration: solid;
 }
 /* Estilo del texto de las 4 imágenes de categorías */
-.letterStyle {
-  color: #000;
-  font-weight: 600;
-}
 footer {
   border-top: 1px solid #00000044;
 }
 .footerLogo {
   width: 100px;
   height: 100px;
-  margin-top: px;
 }
 /* Iconos footer */
 .bi {
