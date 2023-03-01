@@ -84,11 +84,20 @@ footer {
 
   */
 
-.modal-content{
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
+.modal-content {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
   box-shadow: 0px 0px 10px #ccc;
-  
 }
 
 #posicionModalBoton {
@@ -104,7 +113,7 @@ footer {
 
 /*nosotros*/
 
-.quienes {
+.boxDiseñoNosotros {
   border-radius: 2rem;
   background-color: #e3e3e3;
 }
@@ -113,63 +122,8 @@ footer {
   border-radius: 1rem;
 }
 
-.responsable {
-  border-radius: 2rem;
-  background-color: #e3e3e3;
-  text-align: justify;
-}
-
-.responsable img {
-  width: 100%;
-  height: 20%;
-  border-radius: 1.5rem;
-}
-
-.porque {
-  width: 81%;
-  height: 30%;
-  padding: 1.5rem;
-  margin: 1%;
-  border-radius: 1.5rem;
-  background-color: #e3e3e3;
-  text-align: justify;
-}
-
-.porque img {
-  width: 35%;
-  height: 40%;
-  margin-left: 65%;
-  margin-top: -30%;
-}
-
-.equipo {
-  width: 75%;
-  height: 70%;
-  padding: 1.5%;
-  margin: 1%;
-  border-radius: 1.5rem;
-  background-color: #e3e3e3;
-  display: block;
-}
-
-.equipo img {
-  width: 25%;
-  height: 25%;
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-
 .equipo img:hover {
   scale: 1.2;
-}
-
-h6 {
-  display: block;
-  justify-content: center;
-  margin: 3%;
 }
 
 .form-holder1 {
@@ -316,7 +270,7 @@ h6 {
   width: 80%;
 }
 .fondoBanner div h1 {
-      animation: movimiento 7s;
+  animation: movimiento 7s;
 }
 
 .contenedor h1 {
@@ -343,14 +297,22 @@ h6 {
   }
 }
 
-.card{
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
-  
-
+.card {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }
 
-.card:hover{
+.card:hover {
   scale: 1.05;
 }
 
@@ -359,9 +321,9 @@ h6 {
     scale: 1;
   }
 }
-.card-text{ color:#ccc}
-
-
+.card-text {
+  color: #ccc;
+}
 
 /*css Contactos*/
 
@@ -376,51 +338,36 @@ h6 {
 iframe {
   margin-top: 5em;
   width: 100%;
-  height: 23.6em ;
+  height: 23.6em;
   border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+  .enc {
+    margin-top: 7em;
+    margin-bottom: 1em;
+  }
 
-
-@media (max-width: 767px)
-{
-.enc {
-  margin-top: 7em ;
-  margin-bottom: 1em;
+  iframe {
+    margin-top: 2em;
+  }
 }
-
-iframe {
-  margin-top: 2em;
-}
-
-
-
-
-}
-
-
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .mainc {
+    height: 100%;
+  }
 
+  .enc {
+    margin-bottom: 0;
+  }
 
-.mainc {
-  height: 100%;
-  
+  iframe {
+    margin-top: 2.5em;
+  }
 }
 
-.enc {
-  margin-bottom: 0;
-}
-
-iframe {
-  margin-top: 2.5em;
-}
-
-
-
-}
-
-.contenedor404 h1{
+.contenedor404 h1 {
   font-size: 5rem;
   margin-top: 1%;
   margin-left: 1%;
@@ -432,7 +379,8 @@ iframe {
 .contenedor404 p {
   font-size: 1.5rem;
   margin-top: 1%;
-  margin-left: 1%;  padding: 0;
+  margin-left: 1%;
+  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
