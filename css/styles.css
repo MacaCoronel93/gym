@@ -122,8 +122,9 @@ footer {
   border-radius: 1rem;
 }
 
-.equipo img:hover {
-  scale: 1.2;
+.rounded-circle:hover {
+  scale: 1.05;
+  transition-duration: 0.5s;
 }
 
 .form-holder1 {
