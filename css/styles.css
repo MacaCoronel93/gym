@@ -400,11 +400,21 @@ h6 {
 
 
 
+<<<<<<< HEAD
 .navbar-nav .nav-link {
   color: black;
 }
 
 .contenedor404 h1{
+=======
+.contenedor404 {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  border: #000 solid;
+}
+
+.contenedor404 h1 {
+>>>>>>> f90b70599c4fc88189bf9f5a8bc3586544199a2d
   font-size: 5rem;
   margin-top: 1%;
   margin-left: 1%;
@@ -422,8 +432,17 @@ h6 {
 }
 
 .btn-primary {
+<<<<<<< HEAD
   margin-top: 2%;
   margin-left: 1%;
   background-color:#ccc;
   color: #000;
 }
+=======
+  background-color: #ccc;
+  color: #000;
+  position: absolute;
+  left: 44%;
+  margin-top: 1%;
+}
+>>>>>>> f90b70599c4fc88189bf9f5a8bc3586544199a2d
