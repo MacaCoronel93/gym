@@ -31,6 +31,27 @@ header {
   text-shadow: 3px 3px 15px #ebeff8;
 }
 
+.dropdown-item {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 15px #ebeff8;
+  border-radius: 0px;
+  padding: 6px 16px;
+  transition-property: all;
+  transition-duration: 0s;
+}
+.dropdown-item:hover {
+  background: rgba(58, 58, 58, 0.445);
+  color: #0400e9;
+}
+
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0px;
+  transition-property: all;
+  transition-duration: 0s;
+}
+
 .navbarSpace {
   padding-top: 110px;
 }
