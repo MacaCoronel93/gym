@@ -109,62 +109,14 @@ footer {
 }
 
 /*nosotros*/
-.nosotrosTitulo h1 {
-  margin: 1%;
-  padding: 1%;
-  width: 27.5%;
-}
 
-.quienes {
+.boxDiseñoNosotros {
   border-radius: 2rem;
   background-color: #e3e3e3;
-  text-align: justify;
-  margin: 1%;
 }
 
-.quienes img {
-  width: 100%;
-  height: 25%;
+.imgBorde {
   border-radius: 1rem;
-}
-
-.responsable {
-  border-radius: 2rem;
-  background-color: #e3e3e3;
-  text-align: justify;
-}
-
-.responsable img {
-  width: 100%;
-  height: 20%;
-  border-radius: 1.5rem;
-}
-
-.porque {
-  width: 81%;
-  height: 30%;
-  padding: 1.5rem;
-  margin: 1%;
-  border-radius: 1.5rem;
-  background-color: #e3e3e3;
-  text-align: justify;
-}
-
-.porque img {
-  width: 35%;
-  height: 40%;
-  margin-left: 65%;
-  margin-top: -30%;
-}
-
-.equipo {
-  width: 75%;
-  height: 70%;
-  padding: 1.5%;
-  margin: 1%;
-  border-radius: 1.5rem;
-  background-color: #e3e3e3;
-  display: block;
 }
 
 .equipo img {
