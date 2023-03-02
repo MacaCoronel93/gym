@@ -465,22 +465,39 @@ iframe {
   margin-top: 1%;
 }
 
-
 /* querys forgot password */
-@media (max-width: 900px){
-  .modal-content{
-max-width: 400px;
-margin: 0 auto;
+@media (max-width: 900px) {
+  .modal-content {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 650px){
-  .modal-content{
-max-width: 300px;
-margin: 0 auto;
+@media (max-width: 650px) {
+  .modal-content {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 
 .modal-footer > button {
   width: 100%;
+}
+
+/* Diseño de botones de paginacion */
+
+.page-link {
+  margin-top: 10px;
+  background-color: #767e85;
+  color: white;
+}
+
+.active > .page-link {
+  background-color: #1a1a1a;
+  border-color: white;
+}
+
+.page-link:hover {
+  background-color: #494949;
+  color: white;
 }
