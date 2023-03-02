@@ -484,6 +484,17 @@ iframe {
   width: 100%;
 }
 
+/* Diseño caja de comentarios de entrada */
+
+.commentBox {
+  background-color: rgba(255, 255, 255, 0.842);
+}
+
+.commentStyle {
+  border-bottom: 1px solid #4950563d;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 /* Diseño de botones de paginacion */
 
 .page-link {
