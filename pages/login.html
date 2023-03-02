@@ -162,7 +162,7 @@
                 <div class="my-3">
                   <span>No tienes cuenta? <a href="./suscribe.html">Registrate</a></span
                   ><br />
-                  <span><a href="./error404.html">Recuperar contraseña</a></span>
+                  <span><a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Recuperar contraseña</a></span>
                 </div>
               </form>
               <!-- login RR.SS -->
@@ -236,6 +236,59 @@
           <b> ©2023 - Todos los derechos reservados</b>
         </div>
       </div>
+
+      <!-- modal forgot pass -->
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Recuperar contraseña</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Has olvidado tu contraseña? No te preocupes, es posible recuperarla.</p>
+              <form>
+              <label for="email" class="form-label"
+                    >Correo electronico :</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    maxlength="40"
+                    required placeholder="Ingrese su E-mail"
+                    id="email-input"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un correo electronico valido.
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" >Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Listo!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Te enviamos un E-mail con las instrucciones para reestablecer tu contraseña.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-dark" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Volver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </footer>
 
     <script
@@ -243,5 +296,20 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const emailInput = document.getElementById('email-input');
+      emailInput.addEventListener('input', function(event) {
+        if (!event.target.validity.valid) {
+          event.target.classList.add('is-invalid');
+        } else {
+          event.target.classList.remove('is-invalid');
+        }
+      });
+    </script>
+ 
+    
+    
+    
+    
   </body>
 </html>
