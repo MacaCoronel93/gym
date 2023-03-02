@@ -248,9 +248,7 @@
             <div class="modal-body">
               <p>Has olvidado tu contraseña? No te preocupes, es posible recuperarla.</p>
               <form>
-              <label for="email" class="form-label"
-                    >Correo electronico :</label
-                  >
+              <label for="email" class="form-label">Correo electronico :</label>
                   <input
                     type="email"
                     class="form-control"
@@ -297,14 +295,17 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const emailInput = document.getElementById('email-input');
-      emailInput.addEventListener('input', function(event) {
-        if (!event.target.validity.valid) {
-          event.target.classList.add('is-invalid');
-        } else {
-          event.target.classList.remove('is-invalid');
-        }
-      });
+     const emailInput = document.getElementById('email-input');
+     const submitButton = document.querySelector('button[data-bs-target="#exampleModalToggle2"]');
+     emailInput.addEventListener('input', function(event) {
+      if (!event.target.validity.valid) {
+    event.target.classList.add('is-invalid');
+    submitButton.setAttribute('disabled', true);
+      } else {
+        event.target.classList.remove('is-invalid');
+        submitButton.removeAttribute('disabled');
+      }
+    });
     </script>
  
     
