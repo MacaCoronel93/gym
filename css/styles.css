@@ -111,11 +111,11 @@ footer {
   height: 100px;
 }
 /* Iconos footer */
-.bi {
+.iconHov {
   transition-property: all;
   transition-duration: 0.3s;
 }
-.bi:hover {
+.iconHov:hover {
   scale: 1.2;
 }
 /*suscribirse*/
@@ -409,27 +409,34 @@ iframe {
   }
 }
 
-.contenedor404{
-  background-image: url(../assets/video/blog-categorias-deportes1.gif );
-  background-repeat: no-repeat;  
-  background-size:cover;
+.contenedor404 {
+  background-image: url(../assets/video/blog-categorias-deportes1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   height: 100vh;
 }
-
-
-.texto404{
-    position: relative;
-    margin-top: 25px;
+@media (max-width: 767px) {
+  .contenedor404 {
+    background-image: url(../assets/img/error404sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+}
+.texto404 {
+  position: relative;
+  margin-top: 25px;
 }
 
-.texto404 h1{
+.texto404 h1 {
   background-color: transparent;
-  text-shadow: 3px 3px 15px #ebeff8
+  text-shadow: 3px 3px 15px #ebeff8;
 }
-.texto404 p{
+.texto404 p {
   background-color: transparent;
-  text-shadow: 3px 3px 15px #ebeff8
+  text-shadow: 3px 3px 15px #ebeff8;
 }
 
 /*.contenedor404 h1 {
