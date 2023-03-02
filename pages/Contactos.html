@@ -21,7 +21,7 @@
 />
 <title>Contacto</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <header>
       <nav class="navbar navbar-expand-lg navbar-light navbarColor">
         <div class="container">
@@ -109,7 +109,7 @@
         </div>
       </nav>
   </header>
-  <main class="container py-5 mainc">
+  <main class="container py-5 mb-auto mainc">
   <div class="container-fluid navbarSpace">
   <!-- Contenido principal -->
   
@@ -135,7 +135,9 @@
             <label for="mensaje" class="form-label">DEJANOS UN MENSAJE!</label>
             <textarea class="form-control h-50" id="mensaje" name="mensaje" rows="5" maxlength="250" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary submitc">ENVIAR</button>
+            <div class="text-end me-2">
+              <button type="submit" class="btn btn-secondary">ENVIAR</button>
+            </div>
         </form>
       </div>
       <div class="col-12 col-md-6 h-100 align-content-end text-center">
