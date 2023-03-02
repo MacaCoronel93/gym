@@ -409,7 +409,30 @@ iframe {
   }
 }
 
-.contenedor404 h1 {
+.contenedor404{
+  background-image: url(../assets/video/blog-categorias-deportes1.gif );
+  background-repeat: no-repeat;  
+  background-size:cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+
+.texto404{
+    position: relative;
+    margin-top: 25px;
+}
+
+.texto404 h1{
+  background-color: transparent;
+  text-shadow: 3px 3px 15px #ebeff8
+}
+.texto404 p{
+  background-color: transparent;
+  text-shadow: 3px 3px 15px #ebeff8
+}
+
+/*.contenedor404 h1 {
   font-size: 5rem;
   margin-top: 1%;
   margin-left: 1%;
@@ -425,7 +448,7 @@ iframe {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
+}*/
 
 .btn-primary {
   background-color: #ccc;
