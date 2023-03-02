@@ -450,3 +450,7 @@ max-width: 300px;
 margin: 0 auto;
   }
 }
+
+.modal-footer > button {
+  width: 100%;
+}

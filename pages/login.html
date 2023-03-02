@@ -247,19 +247,27 @@
             </div>
             <div class="modal-body">
               <p>Has olvidado tu contraseña? No te preocupes, es posible recuperarla.</p>
+              <form>
               <label for="email" class="form-label"
                     >Correo electronico :</label
                   >
                   <input
                     type="email"
-                    class="form-control required"
+                    class="form-control"
                     name="email"
-                    maxlength="25"
+                    maxlength="40"
                     required placeholder="Ingrese su E-mail"
+                    id="email-input"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    
                   />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un correo electronico valido.
+                  </div>
+              </form>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Enviar</button>
+              <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" >Enviar</button>
             </div>
           </div>
         </div>
@@ -275,7 +283,7 @@
               Te enviamos un E-mail con las instrucciones para reestablecer tu contraseña.
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Volver</button>
+              <button class="btn btn-dark" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Volver</button>
             </div>
           </div>
         </div>
@@ -288,5 +296,20 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const emailInput = document.getElementById('email-input');
+      emailInput.addEventListener('input', function(event) {
+        if (!event.target.validity.valid) {
+          event.target.classList.add('is-invalid');
+        } else {
+          event.target.classList.remove('is-invalid');
+        }
+      });
+    </script>
+ 
+    
+    
+    
+    
   </body>
 </html>
